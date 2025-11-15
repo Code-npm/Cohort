@@ -6,7 +6,7 @@
 html , body{
         width: 100%;
         height: 100vh;
-        background-color: #555;
+        background-color: #810b64;
         color: white;
         background-size: cover;
         background-position: center;
@@ -27,7 +27,7 @@ html , body{
     }
 
 #box , #box2{
-    background-color: rgb(151, 223, 226);
+    /* background-color: rgb(151, 223, 226); */
     /* border: 2px solid rgb(243, 241, 143); */
     width: 400px;
     height: 400px;
