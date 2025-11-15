@@ -1,7 +1,7 @@
 var arr=[
 {
     team:"CSK",
-    primary:"Yellow",
+    primary:"rgb(153, 138, 2)",
     secondary:"Blue",
     Captain:"Mahendra Singh Dhoni",
     fullName:"Chennai Super Kings",
@@ -37,12 +37,12 @@ var arr=[
     fullName:"Delhi Capitals",
     Trophies:"0",
     logo:"https://upload.wikimedia.org/wikipedia/en/2/2f/Delhi_Capitals.svg",
-    image:"https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2025/11/13/1861309-sai.jpg",
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoQBWHOQJNx1KWSoaz6xddvkwoyQIETWHsHg&s",
 },
 {
     team:"GT",
-    primary:"Yellow",
-    
+    primary:"rgb(153, 138, 2)",
+    secondary:"royalblue",
     Captain:"Shubham Gill",
     fullName:"Gujrat Titans",
     Trophies:"5",
@@ -55,18 +55,24 @@ var arr=[
     primary:"Blue",
     secondary:"pink",
     Captain:"Rohit Sharma",
-    fullName:"Mumbai Indians  ",
+    fullName:"Mumbai Indians",
     Trophies:"5",
     logo:"https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png",
     image:"https://i.pinimg.com/736x/a5/b1/fc/a5b1fc39ed3426bd40dae51aea1c0887.jpg"
 },
 ]
-
-var btn=document.querySelector('button')
+var main=document.querySelector('body')
 var box=document.querySelector('#box')
-var box2=document.querySelector('#box2')
+var btn=document.querySelector('button')
+var img=document.querySelector('#box2')
+
 
 btn.addEventListener('click' , function(){
-    var ram=Math.floor(Math.random()*arr.length)
-    
+    var random=Math.floor(Math.random()*arr.length)
+    box.style.backgroundColor=arr[random].primary
+    main.style.backgroundColor=arr[random].secondary
+
+    img.style.backgroundImage = `url('${arr[random].image}')`
+    img.style.bac
+    box.innerHTML=`${arr[random].team}  : ${arr[random].fullName} <br>  ${arr[random].Captain} <br> Trophies:${arr[random].Trophies}`
 })

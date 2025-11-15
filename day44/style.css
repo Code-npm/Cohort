@@ -26,7 +26,7 @@ html , body{
         gap: 20px;
     }
 
-.box{
+#box , #box2{
     background-color: rgb(151, 223, 226);
     /* border: 2px solid rgb(243, 241, 143); */
     width: 400px;
@@ -36,12 +36,15 @@ html , body{
     padding: 20px;
     font-family: monospace;
     font-weight: 500;
-    font-size: 2rem;
-    color: black;
+    font-size: 1.5rem;
+    color: white;
 
 
 }
-    
+    #box2{
+        background-size:cover;
+  background-position:center;
+    }
 button{
     background-color: mediumorchid;
     color: white;
