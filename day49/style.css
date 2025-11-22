@@ -10,6 +10,8 @@ body{
     height: 100%;
     overflow: hidden;
     background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 main{
     display: flex;
@@ -21,6 +23,7 @@ h2{
     color: white;
     text-align: center;
     color: rosybrown;
+    font-size: 2rem;
 }
 .audio{
     background-color: white;
@@ -40,4 +43,5 @@ button{
     color: white;
     padding: 5px;
     border-radius: 20px;
+    transition: transform 0.4s ease;
 }
