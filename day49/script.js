@@ -1,4 +1,4 @@
-var btn =document.querySelector("button")
+var btn =document.querySelectorAll("button")
 var h2=document.querySelector('h2')
 
 document.body.addEventListener("keydown" , function(dets){
@@ -12,7 +12,7 @@ document.body.addEventListener("keydown" , function(dets){
    else if(dets.key=="b"){
        document.getElementById('myAudio2').play()
        btn.style.transform="scale(0.9)"
-       
+       btn.style.backgroundColor="pink"
        h2.innerHTML="Pressed B"
    }
    else if(dets.key=='c'){
